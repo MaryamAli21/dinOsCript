@@ -1,0 +1,149 @@
+p {
+  font-size: 2em;
+  color: #4aad34;
+}
+body {
+     
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    /* background-repeat: repeat-y; */
+    background-position: right center;
+    object-fit:contain;      
+  
+  .quiz-container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  }
+
+
+  
+.quiz-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+  .img {
+    padding: 10px; 
+    margin-top: 50px;
+    align-content: center;
+    
+  }
+  .btn {
+  margin-top: 50px;
+  text-align: center;
+  }
+  .both {
+    width: 150px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 30px;
+    outline: none;
+    border: 3px solid black;
+    transition: all ease 0.5s;
+
+  }
+  #Tutorial {
+    background-color: #4aad34;
+    cursor: pointer;
+  }
+  #Tutorial:hover {
+    background-color: lightskyblue;
+    color: white;
+    border: 3px solid white;
+  }
+  #Quizme {
+    background-color: #4aad34;
+    cursor: not-allowed;
+  }
+  #Quizme:hover {
+    background-color: lightskyblue;
+    color: white;
+    border: 3px solid white;
+  }
+  
+/* .button{
+     width: au;
+     background-color: #4AAD34;
+     margin: 0 auto;
+     display: inline;}
+        
+.action_btn {
+     width: auto;
+     background-color: x#4AAD34;
+     margin: 0 auto;
+     display: inline;
+} */
+ 
+  .choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .choice {
+    font-size: 2em;
+    display: block;
+    margin: 5px 5px;
+    padding: .5em .75em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .choice:hover {
+    background-color: #2980b9;
+    background-color: #d5d5d5;
+  }
+  
+  .quiz-container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .choices {
+    display: flex;
+  }
+  
+  .choice {
+    font-size: 1.5em;
+    display: block;
+    margin: 5px 5px;
+    padding: .5em .75em;
+    background-color: #4aad34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .choice:hover {
+    background-color: lightskyblue;
+  }
+  
