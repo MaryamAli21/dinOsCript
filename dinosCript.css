@@ -72,7 +72,7 @@ body {
   }
   #Quizme {
     background-color: #4aad34;
-    cursor: not-allowed;
+    cursor: pointer;
   }
   #Quizme:hover {
     background-color: lightskyblue;
@@ -146,4 +146,4 @@ body {
   .choice:hover {
     background-color: lightskyblue;
   }
-  
+}

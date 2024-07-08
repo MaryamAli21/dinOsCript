@@ -36,7 +36,7 @@ const questions = [
     choices: ["var a = [];  var b = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’];", "var group = {}; var b = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’];", "cvar a = [] , var b = ‘a’, ‘b’, ‘c’, ‘d’, ‘e’"],
     correct: 0,
     },
-  // Add more questions here...
+ 
 
 ];
 
