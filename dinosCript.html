@@ -4,21 +4,36 @@
     <style></style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" rel="'quiz.html" href="dinosCript.css">
-    <script defer src="quiz.js"></script>
+    <link rel="stylesheet" href="dinosCript.css" rel="'quiz.html" >
     <title>dinosCript</title>
 </head>
 
 <body>
+    <div class="text">
+    
+        <!-- text gets injected here -->
+        
+        <svg class="corner" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M35 3.5L65 6.5V62L0 0L35 3.5Z" fill="white"/>
+        </svg>
+     </div>
     <div style="text-align: center;">
-
-        <img width="500" src="images/logo.png">
+        
+        <audio src="./images/roar.mp3" id="logoSound"></audio>
+        <img width="500" src="images/logo.png" id="logo">
+            <source src="images/roar.mp3" type="audio/mpeg">
+          </audio>  
         <div class="btn">
         <a href="quiz.html">
             <button id="Quizme" class="both">Quizme</button></a>   
             <button id="Tutorial" class="both">Tutorial</button>       
           </div>
+            <div id= Next></div>
           <script src="dinosCript.js"></script>
+        
+
 </body>
+
 </html>
+
 
