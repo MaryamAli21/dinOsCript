@@ -113,46 +113,4 @@ const questions = [
   
   showQuestion();
 
-  currentQuestion = 6; 
-
-
-  function showQuestion() {
-
-    const questionText = document.getElementById("question-text");
-    questionText.textContent = questions[currentQuestion].question;
   
-    const choices = document.querySelectorAll(".choice");
-    choices.forEach((choice, index) => {
-      choice.textContent = questions[currentQuestion].choices[index];
-    });
-  
-    const feedback = document.getElementById("feedback");
-    feedback.textContent = "";
-  }
-  
-  function checkAnswer(selected) {
-    const feedback = document.getElementById("feedback");
-    if (selected === questions[currentQuestion].correct) {
-      feedback.textContent = "Correct!";
-      correctAnswers++;
-    } else {
-      feedback.textContent = "Incorrect!";
-    }
-    setTimeout(() => {
-      currentQuestion++;
-  
-      if (currentQuestion < questions.length) {
-        showQuestion();
-      } else {
-        level2.classList.toggle('hide');
-        const quizContainer = document.querySelector(".quiz-container");
-        quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions. <br><br><div class="leveldiv"><button id="level2" class="next l2">Level 2</button></div>
- </p>`;
-      
-    
-
-      }
-    }, 2000);
-  }
-
-
