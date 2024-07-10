@@ -1,20 +1,20 @@
 p {
-  font-size: 2em;
+  font-size: 18px;
   color: #4aad34;
 }
 body {
-    padding-top: 5%; 
+    /* padding-top: 5%;  */
     background-image: url("images/background.png");
     /* background-repeat: no-repeat; */
     background-repeat: repeat-x;
-    background-size: auto, cover, contain;
+    background-size: contain;
     background-attachment: fixed;
     /* background-repeat: repeat-y; */
     background-position: right center;
     /* object-fit:cover;       */
   
 .quiz-container {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -22,19 +22,20 @@ body {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: center;
+    justify-content: center; */
   }
 
 
   
 .quiz-container {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 600px;
+  width: 200%;
+  max-width: 400px;
+  /* max-height: 400px; */
   margin: 0 auto;
-  padding: 2em;
+  padding: 10px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
 }
@@ -45,22 +46,24 @@ body {
     
   }
   .btn {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   }
   .both {
     width: 150px;
     text-transform: uppercase;
-    padding: 10px 15px;
-    font-size: 20px;
+    padding: 8px 10px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     font-weight: bold;
     border-radius: 10px;
-    margin: 30px;
+    margin: 10px;
+    margin-top: 30px;
     outline: none;
     border: 3px solid black;
     transition: all ease 0.5s;
+
 
   }
   #Tutorial {
@@ -104,8 +107,8 @@ body {
   .choice {
     font-size: 2em;
     display: block;
-    margin: 5px 5px;
-    padding: .5em .75em;
+    margin: 2px 2px;
+    padding: .2px .2px;
     background-color: #3498db;
     color: white;
     border: none;
@@ -118,7 +121,7 @@ body {
     background-color: #d5d5d5;
   }
   
-  .quiz-container {
+  /* .quiz-container {
     box-sizing: border-box;
     width: 100%;
     max-width: 600px;
@@ -127,14 +130,14 @@ body {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  } */
 
   .choices {
     display: flex;
   }
   
   .choice {
-    font-size: 1.5em;
+    font-size: 15px;
     display: block;
     margin: 5px 5px;
     padding: .5em .75em;
@@ -171,27 +174,28 @@ head {
   font-family: 'Sora', monospace;
 }
 .text {
-  font-size: 6vw;
+  font-size: 1rem;
   word-spacing: 0.2em;
   margin: 0 auto;
   background: #4aad34;
   /* padding: 1em; */
-  padding: 60px 30px;
+  padding: 40px 20px;
   /* border-bottom: 0.5vw solid #0e6dad; */
   position:relative;
-  line-height: 1.2em;
+  /* line-height: 1.2em; */
   width: 25vw;
   height: 10vh;
-  font-size: 30px;
+  font-size: 1.2rem;
 }
 .corner {
   rotate: 190deg;
   position:absolute;
   width: 200px;
-  left:5vw;
+  left:2vw;
   /* bottom: 20px; */
-  top: 205px;
+  top: 110px;
   /* transform: translateY(80%);  */
+  z-index: -1;
 }
 .level2 {
   margin-top: 50px;

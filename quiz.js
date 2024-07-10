@@ -37,7 +37,33 @@ const questions = [
       choices: ["var a = [];  var b = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’];", "var group = {}; var b = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’];", "cvar a = [] , var b = ‘a’, ‘b’, ‘c’, ‘d’, ‘e’"],
       correct: 0,
     },
-    
+    {
+    question: "8. What are some of the built in methods in JavaScript?",
+    choices: ["Date(), concat(), push(), pop(), round(), length()", "pow() function, sort() function, find() function, binary_search() function", "Date[], concat[], push[], pop[], round[], length[]"],
+    correct: 0
+  },
+  {
+    question: "9. What are the scopes of a variable in JavaScript?",
+    choices: ["The scope of a variable implies where the variable has been declared or defined in a JavaScript program. There are two scopes of a variable: <br> Global Scope Global variables, having global scope are available everywhere in a JavaScript code. <br> Local Scope Local variables are accessible only within a function in which they are defined.", “There is no variables scope!", “local variable <br> global variable"],
+    correct: 0
+  },
+
+  {
+    question: "10. What is the ‘this’ keyword in JavaScript?",
+    choices: ["this always refers to the “owner” of the function we're executing, or rather, to the object that a function is a method of", "The ‘this’ keyword in JavaScript refers to the currently calling object. It is commonly used in constructors to assign values to object properties", "the this keyword is available inside any class method and refers to the current object used to invoke the method"],
+    correct: 1
+  },
+  {
+    question: "11. What are the conventions of naming a variable in JavaScript?",
+    choices: ["Names can contain letters, digits and underscores. Names must begin with a letter or an underscore (_)", "a viriable name can start with letter or number", "Following are the naming conventions for a variable in JavaScript: Variable names cannot be similar to that of reserved keywords. For example, var, let, const, etc. Variable names cannot begin with a numeric value. They must only begin with a letter or an underscore character. Variable names are case-sensitive"],
+    correct: 2
+  },
+  {
+    question: "12. What is Callback in JavaScript?",
+    choices: ["javascript pass arguments by reference", "In JavaScript, functions are objects and therefore, functions can take other functions as arguments and can also be returned by other functions", "injavascripts functions are not objects and therefore, functions can not take other functions as arguments!"],    
+    correct: 1
+  },
+  
   ];
   
   // const logo = document.querySelector('#logo')
@@ -102,7 +128,7 @@ const questions = [
       } else {
         level2.classList.toggle('hide');
         const quizContainer = document.querySelector(".quiz-container");
-        quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions. <br><br><div class="leveldiv"><button id="level2" class="next l2">Level 2</button></div>
+        quizContainer.innerHTML = `<p>You got ${correctAnswers} out of ${questions.length} questions, <br> <br> you are ready for an interview  involving javascript <br> <br> Yeeey! <br> <br>
  </p>`;
       
     
